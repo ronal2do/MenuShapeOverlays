@@ -1,4 +1,4 @@
 ## Animated Menu ShapeOverlays
 ### Based in awesome work https://tympanus.net/Development/ShapeOverlays/index3.html
 
-![Slider](/asset/slider.gif)
+![Slider](/asset/slide.gif)
