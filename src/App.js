@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Menu from './Menu';
+import withMenu from './Menu';
 
 const MENU_ITEMS = [{
     id: 0,
-    label: 'Xulapa',
+    label: 'Home',
     link: '/none'
   },{
     id: 2,
-    label: 'Xulapa 2',
+    label: 'News',
     link: '/none'
   },{
     id: 3,
-    label: 'Xulapa 3',
+    label: 'About',
     link: '/none'
   },{
     id: 4,
-    label: 'Xulapa 4',
+    label: 'Contact',
     link: '/none'
   }
 ]
@@ -25,7 +25,6 @@ const MENU_ITEMS = [{
 class App extends Component {
   render() {
     return (
-      <Menu items={MENU_ITEMS}>
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -35,9 +34,8 @@ class App extends Component {
             To get started, edit <code>src/App.js</code> and save to reload.
           </p>
         </div>
-      </Menu>
     );
   }
 }
 
-export default App;
+export default withMenu({items: MENU_ITEMS})(App);
