@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "lib/index.js",
   "dependencies": {
+    "classnames": "^2.2.5",
     "glsl-easings": "^1.0.0",
     "query-selector": "^1.0.9"
   },
