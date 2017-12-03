@@ -7,22 +7,22 @@ const MENU_ITEMS = [
   {
     id: 0,
     label: 'Home',
-    link: '/none',
+    action: (props) => console.log('Any routing trigger you use'),
   },
   {
     id: 2,
     label: 'News',
-    link: '/none',
+    action: (props) => console.log('Any routing trigger you use'),
   },
   {
     id: 3,
     label: 'About',
-    link: '/none',
+    action: (props) => console.log('Any routing trigger you use'),
   },
   {
     id: 4,
     label: 'Contact',
-    link: '/none',
+    action: (props) => console.log('Any routing trigger you use'),
   },
 ]
 
