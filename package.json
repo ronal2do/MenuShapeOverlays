@@ -11,13 +11,16 @@
     "build": "babel src --out-dir lib",
     "storybook": "start-storybook -p 9009",
     "deploy-storybook": "storybook-to-ghpages",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.16",
     "@storybook/addon-links": "^3.2.16",
     "@storybook/react": "^3.2.16",
     "@storybook/storybook-deployer": "^2.0.0",
+    "all-contributors-cli": "^4.10.0",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
