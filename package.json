@@ -1,5 +1,5 @@
 {
-  "name": "menu",
+  "name": "react-awesome-menus",
   "version": "0.1.0",
   "main": "lib/index.js",
   "dependencies": {
