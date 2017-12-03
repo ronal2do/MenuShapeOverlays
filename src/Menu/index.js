@@ -21,6 +21,11 @@ const withMenu = props => WrappedComponent => {
       this.setState({ isMenuVisible: !this.state.isMenuVisible })
     }
 
+    handleNavItemClick = item => event => {
+      this.toggleMenu(event)
+      item.action(this.props)
+    }
+
     componentDidMount() {
       const node = ReactDOM.findDOMNode(this)
       this.overlay = new ShapeOverlays(node.querySelector('.shape-overlays'))
@@ -62,8 +67,8 @@ const withMenu = props => WrappedComponent => {
                     className={classnames('global-menu__item global-menu__item--new-menu', {
                       'is-opened': isMenuVisible,
                     })}
-                    href={item.link}
-                    onClick={this.toggleMenu}
+                    href="#"
+                    onClick={this.handleNavItemClick(item)}
                   >
                     {item.label}
                   </a>
